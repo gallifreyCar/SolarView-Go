@@ -5,7 +5,6 @@ builds:
     main: ./main.go
     goos:
       - windows
-      - linux
     goarch:
       - amd64
     ldflags:
