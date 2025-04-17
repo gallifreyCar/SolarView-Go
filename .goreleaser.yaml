@@ -6,10 +6,8 @@ builds:
     goos:
       - windows
       - linux
-      - darwin
     goarch:
       - amd64
-#      - arm64
     ldflags:
       - -s -w
 
@@ -17,13 +15,13 @@ archives:
   - format: zip
     name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
 
-release:
-  github:
-    owner: your-github-username
-    name: solarview-go
-
 checksum:
   name_template: "checksums.txt"
+
+release:
+  github:
+    owner: gallifreyCar
+    name: SolarView-Go
 
 changelog:
   sort: asc
